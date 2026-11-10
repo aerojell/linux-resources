@@ -59,11 +59,11 @@ How to read it
 
 - Local Address:Port is where the service is listening.
 
- - 0.0.0.0:80 means listening on port 80 on all IPv4 interfaces, so other machines can reach it.
+  - 0.0.0.0:80 means listening on port 80 on all IPv4 interfaces, so other machines can reach it.
   
- -  127.0.0.1:80 would mean localhost only. Other machines couldn’t connect even with no firewall at all.
+  -  127.0.0.1:80 would mean localhost only. Other machines couldn’t connect even with no firewall at all.
    
- - [::]:22 or *:22 is the IPv6 equivalent of “all interfaces.”
+  - [::]:22 or *:22 is the IPv6 equivalent of “all interfaces.”
 
 - Peer Address:Port is * for listeners because there’s no remote side yet.
 
