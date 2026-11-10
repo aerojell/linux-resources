@@ -2,7 +2,7 @@
 
 # netcat
 
-## nc -l -k -p 9000 &
+ >nc -l -k -p 9000 &
 
 This command starts a tiny TCP service on port 9000, so you have something extra to find with nmap and to block with firewall rules.
 
@@ -23,7 +23,7 @@ nc
 \&
 - Run the command in the background, so you get your prompt back
 
-About the -p flag
+###About the -p flag
 
 I should have given you the more portable form. With the OpenBSD netcat that Ubuntu installs, nc -l -k 9000 is the standard syntax, with the port as a plain argument. Ubuntu’s build also tolerates -l -p 9000, but the OpenBSD manual documents -p as a source-port option, so don’t be surprised if it complains on another system. Either way, ss -tlnp will show whether it’s listening.
 
