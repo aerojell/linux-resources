@@ -23,10 +23,10 @@ nc
 \&
 - Run the command in the background, so you get your prompt back
 
-###About the -p flag
+### About the -p flag
 
 I should have given you the more portable form. With the OpenBSD netcat that Ubuntu installs, nc -l -k 9000 is the standard syntax, with the port as a plain argument. Ubuntu’s build also tolerates -l -p 9000, but the OpenBSD manual documents -p as a source-port option, so don’t be surprised if it complains on another system. Either way, ss -tlnp will show whether it’s listening.
 
-What it does
+### What it does
 
 nc opens port 9000 and waits. When a client connects, anything the client sends is printed to the terminal, and whatever you type on the server’s side goes back to the client. It doesn’t speak any protocol, so it’s just a bare TCP listener. That’s why it’s useful in a lab: it’s an “open port” you can create and destroy in a second.
