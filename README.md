@@ -10,13 +10,13 @@ This command starts a tiny TCP service on port 9000, so you have something extra
 
 nc	
 - netcat, a tool for reading and writing data over network connections. It’s often called the “Swiss Army knife” of networking
--l
+\-l
 - Listen mode: wait for incoming connections instead of making one
--k
+\-k
 - Keep listening after a client disconnects. Without it, nc accepts one connection and then exits
--p 9000
+\-p 9000
 - The port to listen on
-&
+\&
 - Run the command in the background, so you get your prompt back
 
 About the -p flag
