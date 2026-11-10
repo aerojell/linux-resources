@@ -31,7 +31,7 @@ I should have given you the more portable form. With the OpenBSD netcat that Ubu
 
 nc opens port 9000 and waits. When a client connects, anything the client sends is printed to the terminal, and whatever you type on the server’s side goes back to the client. It doesn’t speak any protocol, so it’s just a bare TCP listener. That’s why it’s useful in a lab: it’s an “open port” you can create and destroy in a second.
 
-# socket stats (ss)
+# socket statistics (ss)
 
 > ss -tlnp
 
